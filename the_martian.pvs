@@ -1,0 +1,26 @@
+%% The Martian - 01:48:53 
+%% 
+%% Source:
+%%    https://github.com/nasa/pvslib/blob/master/Bernstein/MPoly.pvs
+%%
+
+mpoly        : VAR MultiPolynomial
+mdeg         : VAR DegreeMonomcoeff       : VAR Coeff
+nvars,terms  : VAR posnatrel          : VAR RealOrder
+Avars,Bvars  : VAR Varboundedpts,
+intendpts    : VAR IntervalEndpoints
+
+MPoly : TYPE = [#
+  mpoly  : MultiPolynomial,
+  mdeg   : DegreeMono, terms  : posnat,
+  mcoeff : Coeff
+#]
+
+mk_mpoly(mpoly,mdeg,terms,mcoeff) : MACRO MPoly = (#
+  mpoly  := mpoly,
+  mdeg   := mdeg,
+  terms  := terms,
+  mcoeff := mcoeff
+#)
+
+MPolyRel : TYPE = MPoly WITH [# rel:RealOrder
