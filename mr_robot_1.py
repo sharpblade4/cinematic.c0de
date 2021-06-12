@@ -12,8 +12,8 @@ from Crypto.Protocol.KDF import PBKDF2
 from Crypto.PublicKey import RSA
 import getpass
 
-infile = raw_input(“File: “)
-f = open(infile, ‘r’)
+infile = raw_input("File: ")
+f = open(infile, 'r')
 password = getpass.getpass()
 f.seek(1024)
 salt = f.read(32)
