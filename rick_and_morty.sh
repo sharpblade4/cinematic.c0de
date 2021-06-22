@@ -3,7 +3,7 @@
 #
 
 
-# TOP LEFT
+# TOP LEFT (gnu grub)
 	    GNU GRUB
 Memory Test (memtest86)
 M.1|\|t$ 1- 128 bit [dev\sda1]
@@ -28,19 +28,19 @@ Press DEL to run Setup
 C:\>
 
 
-# BOTTOM LEFT
+# BOTTOM LEFT (potentially fdisk)
 Disk /dev/sda 393912.1 GB
-255 heada, 63 sectors/track
+255 heads, 63 sectors/track
 Units = sectors of 1
 I/O size
 
 Device Boot	Start	System
-/dev/sda1	2048	HFFS/NTFS
+/dev/sda1	2048	HPFS/NTFS
 /dev/sda2	408674	exFAT
 /dev/sda3	522512 	Extended
 
 
-# BOTTOM RIGHT
+# BOTTOM RIGHT  (debian load)
 [ok] waiting for .dev to be populated 192.168.1.1 Debian base
 [ok] Activating swap...done
 [..] root file system /dev/mmcblsals: clean, 8483248 files
